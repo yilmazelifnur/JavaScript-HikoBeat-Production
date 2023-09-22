@@ -1,0 +1,124 @@
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  background: linear-gradient(to right, #d89d9d, #977d4c, #c4640b);
+  border-radius: none;
+  
+}
+
+.user-controls {
+  margin-right: 10px;
+}
+
+.user-controls a {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+}
+
+.search-box {
+  flex: 1;
+  width: 300px; 
+  margin: 10px; 
+  position: relative;
+}
+
+.search-box input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px; 
+  background-color: rgba(255, 255, 255, 0.3); 
+  border: none; 
+  outline: none; 
+  color: #333; 
+  
+}
+
+.header-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+main {
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.artist-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.artist-info {
+  flex: 1;
+}
+
+.songs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.songs li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.songs img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Ekran boyutlarına göre responsivlik eklemek için media sorguları kullanılabilir */
+@media (max-width: 768px) {
+  .menu-icon {
+      display: flex;
+  }
+  
+  .user-controls {
+      display: none;
+  }
+}
+
+.song-image {
+  cursor: pointer;
+  border-radius: 10px;
+}
