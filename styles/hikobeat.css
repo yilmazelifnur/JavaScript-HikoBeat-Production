@@ -28,11 +28,16 @@ header {
 .user-controls a {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: bold;
+  
 }
 
 .menu-icon {
   display: none;
   flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-bag {
   cursor: pointer;
 }
 
