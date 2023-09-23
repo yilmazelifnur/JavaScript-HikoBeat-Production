@@ -6,20 +6,28 @@ body {
 }
 
 header {
-  position: relative;
+  position: cover;
   text-align: center;
+  
+  
 }
 
 .topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: transparent;
-  background: linear-gradient(to right, #d89d9d, #977d4c, #c4640b);
-  border-radius: none;
-  
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0px;
+    border-radius: none;
+    background-color: transparent;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 100%;
+    z-index: 2; 
 }
+
+  
+
 
 .user-controls {
   margin-right: 10px;
@@ -50,19 +58,19 @@ header {
 
 .search-box {
   flex: 1;
-  width: 300px; 
+  width: 20px; 
   margin: 10px; 
   position: relative;
 }
 
 .search-box input {
-  width: 80%;
-  padding: 10px;
+  width: 30%;
+  padding: 9px;
   border-radius: 10px; 
   background-color: rgba(255, 255, 255, 0.3); 
   border: none; 
   outline: none; 
-  color: #333; 
+  color: #333333; 
   
 }
 
@@ -70,39 +78,58 @@ header {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
+  margin-bottom: 0;
 }
 
-main {
-  padding: 20px;
-}
+
 
 .profile {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-top: 0;
+  background-image: url("/images/profilebackground.jpg");
+  display:flex;
+  height: 220px;
+  width: 100%;
+  
+  
 }
+ 
+
 
 .artist-image {
   width: 200px;
-  height: 200px;
+  height: 200px;  
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+
+  
 }
 
 .artist-info {
   flex: 1;
+  margin-left: -335px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  
 }
 
 .songs ul {
   list-style-type: none;
   padding: 0;
+  background-image: url('https://static.wixstatic.com/media/9052c5_0afb69f29ee0435ca96507e64be7a2fd~mv2.jpg/v1/fill/w_1221,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9052c5_0afb69f29ee0435ca96507e64be7a2fd~mv2.jpg');
+  
 }
 
 .songs li {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  background-image: url('https://static.wixstatic.com/media/629728_3839529985d84ef5997925ef53b7fd89~mv2.jpg/v1/fill/w_1221,h_614,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/629728_3839529985d84ef5997925ef53b7fd89~mv2.jpg');
 }
 
 .songs img {
@@ -110,20 +137,19 @@ main {
   height: 100px;
   object-fit: cover;
   margin-right: 20px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 /* Ekran boyutlarına göre responsivlik eklemek için media sorguları kullanılabilir */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .menu-icon {
       display: flex;
-  }
+  } 
   
   .user-controls {
       display: none;
   }
 }
 
-.song-image {
-  cursor: pointer;
-  border-radius: 10px;
-}
+
