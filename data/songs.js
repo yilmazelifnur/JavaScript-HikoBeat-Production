@@ -48,5 +48,6 @@ export const songs = [
     duration: "4:20",
     coverImage: "../images/sarki5.1.png",
     priceCents: 2099,
-  }
+  } 
+  
 ];
