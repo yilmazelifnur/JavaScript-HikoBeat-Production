@@ -3,6 +3,7 @@ body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url("../images/songback.jpg");
 }
 
 header {
@@ -154,9 +155,12 @@ header {
 
 .songs-grid {
   display: grid;
-
- 
   grid-template-columns: repeat(8, 1fr);
+  background-image: url("../images/songback.jpg");
+  grid-gap:10px;
+  
+  
+  
 }
 
 
@@ -208,10 +212,6 @@ header {
   padding-bottom: 25px;
   padding-left: 25px;
   padding-right: 25px;
-
-  border-right: 1px solid rgb(231, 231, 231);
-  border-bottom: 1px solid rgb(231, 231, 231);
-
   display: flex;
   flex-direction: column;
 }
@@ -227,51 +227,28 @@ header {
 
   max-width: 100%;
   max-height: 100%;
+  cursor: pointer;
+  border-radius: 10px;
 }
+
+.song-image:hover {
+  transform: scale(1.5); 
+  transition: transform 0.3s ease;
+
+}
+
+
 .song-name {
   height: 40px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .song-price {
   font-weight: 700;
   margin-bottom: 10px;
+  color: white;
 }
-/* .songs ul {
-  list-style-type: none;
-  padding: 0;
-  background-image: url('https://static.wixstatic.com/media/9052c5_0afb69f29ee0435ca96507e64be7a2fd~mv2.jpg/v1/fill/w_1221,h_816,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9052c5_0afb69f29ee0435ca96507e64be7a2fd~mv2.jpg');
-  max-width: 100%;
-  max-height: 100%;
-  
-}
-
-.songs li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  background-image: url('https://static.wixstatic.com/media/629728_3839529985d84ef5997925ef53b7fd89~mv2.jpg/v1/fill/w_1221,h_614,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/629728_3839529985d84ef5997925ef53b7fd89~mv2.jpg');
-}
-
-.songs img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-right: 20px;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-
- @media (max-width: 768px) {
-  .menu-icon {
-      display: flex;
-  } 
-  
-  .user-controls {
-      display: none;
-  }
-} */
 
 
 
