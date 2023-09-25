@@ -82,16 +82,18 @@ header {
 }
 
 
-
 .profile {
   margin-top: 0;
-  background-image: url("/images/profilebackground.jpg");
-  display:flex;
+  background-image: url("/images/marcus-dall-col-Ui4al3h4-lU-unsplash.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 220px;
   width: 100%;
-  
-  
 }
+
  
 
 
