@@ -1,8 +1,10 @@
 .carousel-item img {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
+  max-width: 100%;
+  height: auto; /* Yüksekliği otomatik ayarla */
+  object-fit: fill;
+  max-height: 600px; /* Maksimum yükseklik sınırlaması */
 }
+
 
 .main {
   margin-top: 60px;
@@ -17,6 +19,11 @@
   
   
 }
+.icon-cart{
+  max-width: 45px;
+  max-height: 45px;
+  cursor: pointer;
+ } 
 
 
 @media (max-width: 2000px) {
@@ -103,4 +110,14 @@
   font-weight: 700;
   margin-bottom: 10px;
   color: white;
+}
+
+.add-to-cart-button{
+  border-radius: 10px;
+  background-color:rgb(0,0,0);
+  color: rgb(219, 213, 213);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 5px;
+  border: none;
+  font-size: small;
 }

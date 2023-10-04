@@ -1,5 +1,7 @@
 import { formatCurrency } from "../data/functions.js";
 import { songs } from "../data/songs.js";
+import { cart , addToCart } from "../data/cart.js";
+
 
 let audioPlayers = [
   new Audio("../musics/groovingInfinity.mp3"),
@@ -28,11 +30,11 @@ songs.forEach((song) => {
       <div class="song-price">
         $${formatCurrency(song.priceCents)}
       </div>
-      <div>
-      </div>
-      <button class="add-to-cart-button button-primary js-add-to-cart" data-id="${song.id}">
+      <button class="add-to-cart-button js-add-to-cart" data-song-id="${song.id}">
         Add to Cart
       </button>
+      </div>
+      
     </div>
     
   `;
@@ -65,5 +67,17 @@ songImages.forEach((image) => {
     }
   });
 });
+
+document.querySelectorAll('.js-add-to-cart')
+  .forEach((button)=>{
+    button.addEventListener('click',()=>{
+      const songId =button.dataset.songId;
+      addToCart(songId);
+      
+    
+    });
+     
+
+  });
 
 
