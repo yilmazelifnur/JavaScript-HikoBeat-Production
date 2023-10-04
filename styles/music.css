@@ -1,3 +1,9 @@
+.carousel-item img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
 .main {
   margin-top: 60px;
 }
