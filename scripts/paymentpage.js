@@ -1,33 +1,38 @@
-import { cart} from "../data/cart";
-import { songs } from "../data/songs";
-import { formatCurrency } from "../data/functions";
+import { cart } from "../data/cart.js";
+import { songs } from "../data/songs.js";
 
-const songId = localStorage.getItem('songId');
-let cartSummaryHTML = '';
+
+let cartSummaryHTML='';
 
 cart.forEach((cartItem)=>{
-  const songId=cartItem.songId;
-  
-let matchingSong;
+  const songId = cartItem.songId;
+
+  let matchingSong;
   songs.forEach((song)=>{
-    if(song.Id===songId){
-      matchingSong= song;
+    if(song.id === songId){
+      matchingSong = song;
     }
   });
 
+ 
 
-  cartSummaryHTML += `div class="box box-order">
-    <div class="order-detail">
-      <div class="song-image-container">
-        <img class="song-image" src="${matchingSong.coverImage}" data-id="${matchingSong.id}" >
+
+  cartSummaryHTML +=
+   `<div class="order-detail">
+    <div class="song-image-container">
+      <img class="song-image" src="${matchingSong.coverImage}" data-id="${matchingSong.id}" >
       </div>
       <div class="song-name limit-text-to-2-lines">
-        ${matchingSong.songTitle}
+       ${matchingSong.songTitle}
       </div>
       <div class="song-price">
-      $${formatCurrency()}
-      </div>
+       $${matchingSong.priceCents/100}
     </div>
-  </div>`
+    </div>
+  
+  
+  `
+})
 
-});
+
+document.querySelector('.box-order').innerHTML=cartSummaryHTML;
