@@ -1,6 +1,8 @@
 import { cart } from "../data/cart.js";
 import { songs } from "../data/songs.js";
 import { formatCurrency } from "../data/functions.js";
+import React from 'react';
+
 
 
 
