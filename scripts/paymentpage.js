@@ -3,6 +3,8 @@ import { songs } from "../data/songs.js";
 import { formatCurrency } from "../data/functions.js";
 
 
+
+
 let cartSummaryHTML='';
 
 cart.forEach((cartItem)=>{
@@ -38,3 +40,8 @@ cart.forEach((cartItem)=>{
 
 
 document.querySelector('.box-order').innerHTML=cartSummaryHTML;
+
+
+
+
+

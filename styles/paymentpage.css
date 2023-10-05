@@ -13,7 +13,7 @@ body {
 }
 
 .box {
-  width: 300px;
+  width: 800px;
   height: 750px;
   background-color: white;
   border: 2px solid #333;
@@ -69,3 +69,11 @@ body {
   color: black;
 }
 
+.metamask-button{
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: orange;
+  border: 3px solid;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
