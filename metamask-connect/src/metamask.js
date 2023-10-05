@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { ethers  } from 'ethers';
 
 
+
 const MetaMask = () => {
    
   const [errorMessage, setErrorMessage] = useState(null);
@@ -34,14 +35,14 @@ const MetaMask = () => {
   
   async function sendTransaction (e) {
     let params =[{
-      from : "",
+      from : "0x0f0444ad73588236BeB019049fF9B2f9d80Bd484",
       to:e.target.to_address.value,
       gas:Number(21000).toString(16),
       gasPrice: Number(2500000).toString(16),
       value:Number(10000000000000000).toString(16)
     }]
 
-    let result = await window.ethereum.request({method:"eth_sendTransaction", params}).catch((err)=>{
+     let result = await window.ethereum.request({method:"eth_sendTransaction", params}).catch((err)=>{
       console.log(err)
     })
 
@@ -49,7 +50,7 @@ const MetaMask = () => {
 
   return (
 
-    <>
+    <div>
       <p>MetaMask Connection</p>
       <button onClick={connectWallet}>Connect Wallet Button</button>
       <h3>Address: {defaulAccount} </h3>
@@ -63,7 +64,7 @@ const MetaMask = () => {
 
     
      {errorMessage}
-    </>
+    </div>
   )
 }
 

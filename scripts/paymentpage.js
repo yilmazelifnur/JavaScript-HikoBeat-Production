@@ -1,10 +1,6 @@
 import { cart } from "../data/cart.js";
 import { songs } from "../data/songs.js";
 import { formatCurrency } from "../data/functions.js";
-import React from 'react';
-import {MetaMask} from '../metamask-connect/src/metamask.js'
-
-
 
 
 
@@ -45,6 +41,5 @@ cart.forEach((cartItem)=>{
 document.querySelector('.box-order').innerHTML=cartSummaryHTML;
 
 
-MetaMask();
 
 
