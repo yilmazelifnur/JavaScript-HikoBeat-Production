@@ -2,7 +2,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
 }
 
@@ -13,8 +13,8 @@ body {
 }
 
 .box {
-  width: 800px;
-  height: 750px;
+  width: 350px;
+  height: 600px;
   background-color: white;
   border: 2px solid #333;
   margin: 10px;
@@ -22,6 +22,7 @@ body {
   line-height: 150px;
   font-size: 18px;
   border-radius: 10px;
+  display: flex;
 }
 .box-order{
   position: relative;
@@ -48,7 +49,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 180px;
-  margin-bottom: 0px;
+ 
 }
 .song-image {
   max-width: 100%;
@@ -59,8 +60,12 @@ body {
 
 .song-name {
   height: 40px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   color: black;
+  margin-right: 5px;
+  font-size: smaller;
+  margin-top: 0px;
+
 }
 
 .song-price {
@@ -75,5 +80,6 @@ body {
   background-color: orange;
   border: 3px solid;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+  max-width: 258px;
+  max-height: 1200px;
 }

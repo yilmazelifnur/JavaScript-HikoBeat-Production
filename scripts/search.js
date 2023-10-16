@@ -29,8 +29,7 @@ function displayResults(results) {
 
   results.forEach(song => {
     const resultItem = document.createElement("div");
-    resultItem.innerHTML = `<p>${song.songTitle} - ${song.artist}</p>
-                            `;
+    resultItem.innerHTML = `<p>${song.songTitle} - ${song.artist}</p>`;
 
     resultsDiv.appendChild(resultItem);
   });

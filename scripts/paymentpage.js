@@ -4,6 +4,7 @@ import { formatCurrency } from "../data/functions.js";
 
 
 
+
 let cartSummaryHTML='';
 
 cart.forEach((cartItem)=>{
@@ -25,7 +26,7 @@ cart.forEach((cartItem)=>{
     <div class="song-image-container">
       <img class="song-image" src="${matchingSong.coverImage}" data-id="${matchingSong.id}" >
       </div>
-      <div class="song-name limit-text-to-2-lines">
+      <div class="song-name">
          ${matchingSong.songTitle}
       </div>
       <div class="song-price">
@@ -36,6 +37,7 @@ cart.forEach((cartItem)=>{
   
   `
 })
+
 
 
 document.querySelector('.box-order').innerHTML=cartSummaryHTML;

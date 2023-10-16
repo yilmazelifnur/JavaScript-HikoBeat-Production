@@ -3,6 +3,9 @@ import { songs } from "../data/songs.js";
 import { cart , addToCart } from "../data/cart.js";
 
 
+
+
+
 let audioPlayers = [
   new Audio("../musics/groovingInfinity.mp3"),
   new Audio("../musics/purpleNight.mp3"),
