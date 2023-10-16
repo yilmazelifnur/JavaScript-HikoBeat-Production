@@ -9,33 +9,21 @@
   <title>Payment</title>
 </head>
 <body>
-  <div class="box box-order">   
+  
+  <div class="box box-order">
+    
+
+
+  
+    
   </div>
   
-  <div id="react-root">
-   <a  id="openMetaMask" href="metamask-connect/src/metamask.js"><button>Pay With MetaMask </button></a>
+  <div class="payment-button">
+   <a  href="https://hikobeat-metamask.onrender.com"><button class="openMetaMask">Pay With MetaMask </button></a>
   </div>
    
-  
-  
 
 
-   
- <script>
-  document.getElementById("openMetaMaskLink").addEventListener("click", function(event) {
-  event.preventDefault();
-  let scriptUrl = "metamask-connect/src/metamask.js";
-  
-  let script = document.createElement("script");
-  script.src = scriptUrl;
-  document.body.appendChild(script);
-});
-
-
-
- </script>
-
-  <script type="module" src="metamask-connect/src/app.js"></script>
   <script type="module" src="scripts/paymentpage.js"></script>
 </body>
 </html>
