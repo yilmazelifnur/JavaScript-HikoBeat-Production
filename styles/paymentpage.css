@@ -12,7 +12,7 @@ body {
   
   
 }
-/* Önceki CSS kurallarınızı koruyun ve aşağıdaki stil eklemelerini yapın */
+
 
 .order-detail {
   display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .song-image-container {
-  flex: 0 0 25%; /* Görselin genişliğini ayarlayın */
+  flex: 0 0 25%; 
 }
 
 .song-image {
@@ -35,7 +35,7 @@ body {
 }
 
 .song-name {
-  flex: 1; /* İsim bölümünü genişletmek için */
+  flex: 1; 
   font-weight: 700;
   margin-bottom: 0;
   color: black;
@@ -43,14 +43,14 @@ body {
 }
 
 .song-price {
-  flex: 0 0 15%; /* Fiyat bölümünü genişliği ayarlayın */
+  flex: 0 0 15%; 
   font-weight: 700;
   color: black;
 }
 
 .delete-from-cart-button {
-  flex: 0 0 10%; /* Silme düğmesi bölümünün genişliğini ayarlayın */
-  margin-left: 10px; /* Silme düğmesinden diğer içeriğe boşluk bırakın */
+  flex: 0 0 10%; 
+  margin-left: 10px; 
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
   color: rgb(219, 213, 213);
