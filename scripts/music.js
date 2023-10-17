@@ -36,7 +36,7 @@ songs.forEach((song) => {
       <button class="add-to-cart-button js-add-to-cart" data-song-id="${song.id}">
         Add to Cart
       </button>
-      </div>
+      
       
     </div>
     
@@ -70,6 +70,7 @@ songImages.forEach((image) => {
     }
   });
 });
+
 
 document.querySelectorAll('.js-add-to-cart')
   .forEach((button)=>{
