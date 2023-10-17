@@ -50,15 +50,4 @@ export function removeFromCart(songId) {
   saveToStorage();
 }
 
-export function updatedCart() {
-  const cartListElement = document.getElementById('.order-detail'); 
-  cartListElement.innerHTML = ''; 
-
-  cart.forEach((cartItem) => {
-   
-    const cartItemElement = document.createElement('.order-detailr');
-    cartItemElement.textContent = `${cartItem.songId}`; 
-    cartListElement.appendChild(cartItemElement);
-  });
-}
 

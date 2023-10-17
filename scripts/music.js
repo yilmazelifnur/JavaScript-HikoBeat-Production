@@ -1,6 +1,6 @@
 import { formatCurrency } from "../data/functions.js";
 import { songs } from "../data/songs.js";
-import { cart , addToCart } from "../data/cart.js";
+import { addToCart } from "../data/cart.js";
 
 
 

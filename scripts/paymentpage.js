@@ -1,4 +1,4 @@
-import { cart,removeFromCart, updatedCart } from "../data/cart.js";
+import { cart,removeFromCart } from "../data/cart.js";
 import { songs } from "../data/songs.js";
 import { formatCurrency } from "../data/functions.js";
 
